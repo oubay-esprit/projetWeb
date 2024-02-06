@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+</head>
+<body>
+    <header>
+        <nav>
+           
+                <a href="accueil.html">Accueil</a>
+                <a href="Projects-et-tache.html">projects et taches</a>
+                <a href="liste-employer.html">Liste employer</a>
+                <a href="inscription.html">Inscription</a>
+            
+        </nav>
+        <hr>
+    </header>
+
+    <section>
+        <img src="img1.jpg" alt="Logo" height="400" width=100% >
+        <h1>Inscription au Site</h1>
+        <form>
+            <table>
+                <tr>
+                    <td><label for="nom">Nom :</label></td>
+                    <td><input type="text" id="nom" name="nom" required pattern="[A-Za-z]{2,20}" title="Veuillez entrer un nom valide (lettres uniquement)"></td>
+                </tr>
+                <tr>
+                    <td><label for="prenom">Prenom :</label></td>
+                    <td><input type="text" id="prenom" name="prenom" required pattern="[A-Za-z]{2,20}" title="Veuillez entrer un prénom valide (lettres uniquement)"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email :</label></td>
+                    <td><input type="email" id="email" name="email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="telephone">Téléphone :</label></td>
+                    <td><input type="tel" id="telephone" name="telephone" required pattern="[0-9]{8}" title="Veuillez entrer un numéro de téléphone valide (8 chiffres)"></td>
+                </tr>
+                <tr>
+                    <td><label for="dateMatch">Date du match :</label></td>
+                    <td><input type="date" id="date" name="date" required min="2024-01-01" max="2024-12-30"></td>
+                </tr>
+                <tr>
+                    
+                   <td> <label for="password">Password:</label></td>
+                    <td><input type="password" id="password" name="password" required pattern="[A-Za-z 0-9]{8}"> </td>
+                </tr>
+                <tr><td>
+                    <input type="submit" value="S'inscrire">
+                </td></tr>
+            </table>
+        </form>
+    </section>
+
+    <footer>
+        <hr>
+        <p>Contactez-nous par email : <a href="mailto:contact@esprit.tn">contact@esprit.tn</a></p>
+        <p>Adresse : Ghazela, Tunis</p>
+    </footer>
+</body>
+</html>
